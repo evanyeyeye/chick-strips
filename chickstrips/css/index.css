@@ -1,0 +1,29 @@
+img, iframe, audio, #audiolabel {
+    margin: 0px auto 0px auto;
+    display: block;
+    text-align: center;
+}
+.flash {
+   z-index: -10;
+   text-align: center;
+}
+.music {
+    position: relative;
+    top: -65px;
+    z-index: 10;
+}
+#disclaim {
+    color: purple;
+    text-decoration: none;
+    clear: both
+}
+#begin {
+     color: #b48608; 
+     font-family: 'Droid serif', serif; 
+     font-size: 36px; 
+     font-weight: 400; 
+     font-style: italic; 
+     line-height: 44px; 
+     margin: 0 0 12px; 
+     text-align: center; 
+}
