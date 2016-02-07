@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>ChickStrips :: Locations</title>
+    <link rel="stylesheet" type="text/css" href="css/international.css"/>
+    <style>
+		#map-canvas {
+			width: 800px;
+			height: 600px;
+			border-radius: 600px;
+			margin: 0px auto 0px auto;
+			box-shadow: 0px 0px 100px gray;
+			z-index:  0;
+		}
+		</style>
+		<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
+		<script>
+			function initialize() {
+				var place1 = new google.maps.LatLng(38.864542, -77.273298);
+				var place2 = new google.maps.LatLng(33.572149, -117.723915);
+				var place3 = new google.maps.LatLng(41.498696, -81.494350);
+				var placecenter = new google.maps.LatLng(38.169460, -97.106696);
+				var mapOptions = {
+					zoom: 4,
+					center: placecenter
+			};
+			
+			var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+
+			var content1 = '<div id="content">'+
+				'<div id="siteNotice">'+
+				'</div>'+
+				'<h1 id="firstHeading" class="firstHeading">Chickstrips (VA)</h1>'+
+				'<div id="bodyContent">'+
+				'<p>ChickStrips, your favorite fast food restaurant. Located in Virginia. ' +
+				'<br/><br/><strong>Address:</strong></br>9509 Fairfax Blvd, Fairfax, VA 22031'+
+				'<br/><strong>Phone Number:</strong><br/> 555-244-2536' +
+				'</div>'+
+				'</div>';
+				
+			var content2 = '<div id="content">'+
+				'<div id="siteNotice">'+
+				'</div>'+
+				'<h1 id="firstHeading" class="firstHeading">Chickstrips (CA)</h1>'+
+				'<div id="bodyContent">'+
+				'<p>ChickStrips, your favorite fast food restaurant. Located in California. ' +
+				'<br/><br/><strong>Address:</strong></br>26871 Aliso Creek Rd, Aliso Viejo, CA 92656'+
+				'<br/><strong>Phone Number:</strong><br/> 555-244-2536' +
+				'</div>'+
+				'</div>';
+				
+			var content3 = '<div id="content">'+
+				'<div id="siteNotice">'+
+				'</div>'+
+				'<h1 id="firstHeading" class="firstHeading">Chickstrips (OH)</h1>'+
+				'<div id="bodyContent">'+
+				'<p>ChickStrips, your favorite fast food restaurant. Located in Ohio. ' +
+				'<br/><br/><strong>Address:</strong></br>26300 Cedar Rd, Beachwood, OH 44122'+
+				'<br/><strong>Phone Number:</strong><br/> 555-244-2536' +
+				'</div>'+
+				'</div>';
+				
+			var info1 = new google.maps.InfoWindow({
+				content: content1
+			});
+			
+			var info2 = new google.maps.InfoWindow({
+				content: content2
+			});
+			
+			var info3 = new google.maps.InfoWindow({
+				content: content3
+			});
+
+			var marker1 = new google.maps.Marker({
+				position: place1,
+				map: map,
+				title: 'ChickStrips'
+			  });
+
+			var marker2 = new google.maps.Marker({
+				position: place2,
+				map: map,
+				title: 'ChickStrips'
+			});
+			
+			var marker3 = new google.maps.Marker({
+				position: place3,
+				map: map,
+				title: 'ChickStrips'
+			});
+			  
+			google.maps.event.addListener(marker1, 'click', function() {
+				info1.open(map,marker1);
+			});
+			
+			google.maps.event.addListener(marker2, 'click', function() {
+				info2.open(map,marker2);
+			});
+			
+			google.maps.event.addListener(marker3, 'click', function() {
+				info3.open(map,marker3);
+			});
+			}
+			
+			google.maps.event.addDomListener(window, 'load', initialize);
+		</script>
+	</head>
+	<body>
+		<header>
+			<a href="index.html">
+			    <div id="title">
+			        <h1 style="position: absolute; z-index: 1; color: #FFDF33; font-family:'Cooper Black'; left: 14px;">ChickStr&nbsp;ps</h1>
+                    <img style="position: absolute; left: 143px; top: 10px;" src="images/logo.gif" alt="Title"/>
+                </div>
+            </a>
+			<a href="index.html">
+			    <div id="home">
+			        HOME
+			    </div>
+			</a>
+			<a href="menu.html">
+			    <div id="menu">
+			        MENU
+			    </div>
+			</a>
+			<a href="form.html">
+			    <div id="order">
+			        ORDER FOOD
+			    </div>
+			</a>
+			<a href="locations.html">
+			    <div id="locations">
+			        <span class="selected">LOCATIONS</span>
+			    </div>
+			</a>
+		</header>
+		<br/><br/><br/><br/><br/><br/><br/>
+		
+		<div class="backbox">
+		  <div id="map-canvas"></div>
+		</div>
+		
+		<br/><br/><br/><br/><br/><br/><br/>
+		<footer>
+			<p>CALL US! 555-244-2536</p>
+		</footer>
+	</body>
+</html>
+
