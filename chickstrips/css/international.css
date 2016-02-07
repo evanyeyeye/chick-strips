@@ -1,0 +1,75 @@
+body {
+    min-width: 1000px;
+    background-image: url("http://www.themesltd.com/backgrounds/food/loads_of_chicken_nuggets.png");
+    font-size: 15px;
+    font-weight: bold;
+    font-family: "Cooper Black", "Arial Black", sans-serif;
+}
+header {
+    background-color: #33CCCC;
+    height: 100px;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    min-width: 1125px;
+    box-shadow: 0px 5px 100px black;
+    z-index: 10;
+}
+#home, #menu, #order, #locations, #title {
+    float: left;
+    color: white;
+    text-decoration: none;
+    width: 18%;
+    text-align: center;
+    top: 40px;
+    position: relative;
+    font-size: 20px;
+    font-family: "Cooper Black", "Comic Sans", sans-serif;
+}
+#home:hover, #menu:hover, #order:hover, #locations:hover {
+    color: gold;
+    box-shadow: 0px 0px 100px gold;
+}
+.selected {
+    color: gold;
+}
+footer {
+    background-color: #33CCCC;
+    height: 60px;
+    position: fixed;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    min-width: 1000px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-family: "Cooper Black", "Comic Sans", sans serif;
+    box-shadow: 0px -5px 100px black;
+    z-index: 15;
+}
+#title {
+    top: 0px;
+}
+#home {
+    margin-left: 300px;
+}
+.backbox {
+    background-color: #E4E6E3;
+    width: 800px;
+    margin: auto;
+    padding: 50px 50px;
+    border-radius: 25px;
+    border: 3px solid #33CCCC;
+}
+.clear {
+    clear: both;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    color: gold;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
