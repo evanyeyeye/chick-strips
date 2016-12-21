@@ -1,0 +1,115 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+	<title>ChickStrips :: Order Food</title>
+	<meta http-equiv="Content-Language" content="en-us" />
+	<link rel="stylesheet" type="text/css" href="css/international.css">
+	<link rel="stylesheet" type="text/css" href="css/form.css">
+	<script>
+		function popup() {
+   			alert("Are you sure you want to purchase this order?");
+		}
+	</script>
+</head>
+<body>
+	<header>
+		<a href="index.html">
+			<div id="title">
+		        	<h1 style="position: absolute; z-index: 1; color: #FFDF33; font-family:'Cooper Black'; left: 14px;">ChickStr&nbsp;ps</h1>
+                		<img style="position: absolute; left: 112px; top: 10px;" src="images/logo.gif" alt="Title"/>
+			</div>
+    		</a>
+		<a href="index.html">
+			<div id="home">
+		        	HOME
+			 </div>
+		</a>
+		<a href="menu.html">
+		    	<div id="menu">
+		        	MENU
+		    	</div>
+		</a>
+		<a href="form.html">
+			<div id="order">
+		        	<span class="selected">ORDER FOOD</span>
+			 </div>
+		</a>
+		<a href="locations.html">
+		    	<div id="locations">
+		        	LOCATIONS
+		    	</div>
+		</a>
+	</header>
+	<br/><br/><br/><br/><br/><br/><br/>
+	
+	<marquee behavior="scroll" direction="left"><a href="troll.html" style="text-decoration: none; color: red;"> Today's Offer: Click here for a free sandwich!</a></marquee>
+	<br/><br/><br/><br/>
+	
+	<form class="feedback" method="get" action="">
+	<fieldset>
+	    	<legend>Order Here for Pickup</legend>
+
+	    	<div class="clearfloat"></div>
+		<div class="subh">Order Info:</div>
+		<div class="data">
+			<input type="text" size="45" name="name" placeholder="Last Name, First Name">
+			<input type="text" size="15" name="name" placeholder="(555)-555-5555"/>
+		</div>
+		
+	    	<div class="clearfloat"></div>
+		<div class="subh">Sandwiches:</div>
+		<div class="data">
+		    <input type="checkbox" name="sandwiches" value="chicksandwich"/>Chicken Sandwich<br />
+			<input type="checkbox" name="sandwiches" value="chickdeluxesandwich"/>Chicken Deluxe Sandwich<br />
+			<input type="checkbox" name="sandwiches" value="spicychicksandwich"/>Spicy Chicken Sandwich<br />
+			<input type="checkbox" name="sandwiches" value="spicychickdeluxesandwich"/>Spicy Chicken Deluxe Sandwich<br />
+		</div>
+
+		<div class="clearfloat"></div>
+		<div class="subh">Other Chicken Items:</div>
+		<div class="data">
+			<input type="checkbox" name="chickitems" value="chicknugget"/>Chicken Nuggets<br />
+			<input type="checkbox" name="chickitems" value="chickstrips"/>Chicken Strips<br />
+		</div>
+
+		<div class="clearfloat"></div>
+		<div class="subh">Salads:</div>
+		<div class="data">
+			<input type="checkbox" name="salads" value="asiansalad"/>Asian Salad<br />
+			<input type="checkbox" name="salads" value="cobbsalad"/>Cobb Salad<br />
+			<input type="checkbox" name="salads" value="grillmarketsalad"/>Grilled Market Salad<br />
+
+		 </div>
+
+		<div class="clearfloat"></div>
+		<div class="subh">Desserts:</div>
+		<div class="data">
+			<input type="checkbox" name="desserts" value="milkshake"/>Milkshake (Choose flavor at pickup area)<br />
+			<input type="checkbox" name="desserts" value="cookie"/>Chocolate Chunk Cookie<br />
+			<input type="checkbox" name="desserts" value="frostlemonade"/>Frosted Lemonade<br />
+			<input type="checkbox" name="desserts" value="icecream"/>Ice Cream Cone<br />
+		</div>
+		
+	        <div class="clearfloat"></div>
+	        <div class="subh">Payment Method:</div>
+		<div class="data">
+		    <input type="radio" name="payway" value="credcard"/>Credit Card<br />
+		    <input type="radio" name="payway" value="debcard"/>Debit Card<br />
+		    <input type="radio" name="payway" value="check"/>Check<br />
+		    <input type="radio" name="payway" value="paypal"/>Paypal<br />
+		    <input type="radio" name="payway" value="other"/><input type="text" size="45" name="otherpay" placeholder="If other, specify here..."/><br />
+		</div>
+		
+		<div class="clearfloat"></div><br />
+	        <input type="submit" value="Pick Up in 15 Minutes" onclick="popup()"/>
+	        <input type="reset" value="Reset Form" />
+	</fieldset>
+    	</form>
+
+    	<br/><br/><br/><br/><br/><br/><br/>
+	<footer>   
+		<p>CALL US! 555-244-2536</p>
+	</footer>
+</body>
+</html>
